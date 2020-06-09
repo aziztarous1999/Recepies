@@ -1,5 +1,11 @@
 <template>
   <v-app dark>
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -105,6 +111,11 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire'
+        },
+        {
+          icon: 'mdi-account-plus ',
+          title: 'Register',
+          to: '/Register'
         }
       ],
       miniVariant: false,

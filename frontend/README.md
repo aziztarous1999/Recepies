@@ -1,6 +1,6 @@
 # frontend
 
-> Recepise frontend part
+> Recepies frontend part
 
 ## Build Setup
 

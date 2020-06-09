@@ -30,27 +30,34 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    {
+      src:"~/plugins/vue-notification.js",
+      ssr:false
+    }
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
+
+ proxy: {
+  '/api/':'http://127.0.0.1:3333/'
+} ,
   axios: {
+    proxy: true
   },
   /*
   ** vuetify module configuration
